@@ -6,3 +6,4 @@ export default function () {
 }
 
 // use {{ project.environment }} in the .md or .njk files
+// Read from package.json -> pkg.name

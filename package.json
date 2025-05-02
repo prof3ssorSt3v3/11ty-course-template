@@ -1,5 +1,6 @@
 {
-  "name": "eleventy-first",
+  "name": "Mobile App Course Name",
+  "code": "MAD9000",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
