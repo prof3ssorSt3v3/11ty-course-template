@@ -19,6 +19,7 @@
   --clr-primary-300: hsl(198, 16%, 64%); /*hsla(222, 72%, 68%, 1); /* hsla(169, 100%, 39%, 1);*/
   --clr-primary-400: hsl(197, 31%, 50%); /*hsla(222, 72%, 39%, 1); /* hsla(169, 100%, 26%, 1);*/
   --clr-primary-500: hsl(197, 31%, 20%); /* hsla(222, 72%, 16%, 1); /* hsla(169, 100%, 16%, 1);*/
+  --clr-primary-600: hsl(197, 61%, 40%); /* hsla(222, 72%, 16%, 1); /* hsla(169, 100%, 16%, 1);*/
 
   --clr-neutral-100: hsla(0, 0%, 100%, 1);
   --clr-neutral-200: hsla(0, 0%, 80%, 0.8);
@@ -98,6 +99,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  color: var(--clr-primary-600);
 }
 
 /* Make images easier to work with */
