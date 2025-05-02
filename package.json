@@ -1,0 +1,28 @@
+{
+  "name": "eleventy-first",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "MODE=production npx @11ty/eleventy",
+    "serve": "MODE=development npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "eleventy-plugin-feathericons": "^1.1.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "eleventy-plugin-icons": "^4.5.3",
+    "eleventy-plugin-tailwindcss": "^0.3.0",
+    "luxon": "^3.6.1",
+    "simple-icons": "^14.12.3"
+  }
+}

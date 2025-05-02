@@ -1,0 +1,367 @@
+@import url('https://unpkg.com/prismjs@1.20.0/themes/prism.css');
+/* For syntax highlighting */
+
+:root {
+  --fs-sm: 0.8375rem; /* sm */
+  --fs-md: 1.0625rem; /* md */
+  --fs-lg: 1.375rem; /* lg */
+  --fs-xl: 1.875rem; /* xl */
+  --fs-xxl: 2rem; /* xxl */
+
+  --ff-body: 'Montserrat', sans-serif;
+  --ff-heading: 'Hepta+Slab', serif;
+
+  --fw-100: 100;
+  --fw-300: 300;
+  --fw-500: 500;
+
+  --clr-primary-200: hsla(222, 72%, 95%, 1); /*hsla(169, 70%, 95%, 1); */
+  --clr-primary-300: hsla(222, 72%, 68%, 1); /* hsla(169, 100%, 39%, 1);*/
+  --clr-primary-400: hsla(222, 72%, 39%, 1); /* hsla(169, 100%, 26%, 1);*/
+  --clr-primary-500: hsla(222, 72%, 16%, 1); /* hsla(169, 100%, 16%, 1);*/
+
+  --clr-neutral-100: hsla(0, 0%, 100%, 1);
+  --clr-neutral-200: hsla(0, 0%, 80%, 0.8);
+  --clr-neutral-300: hsla(0, 0%, 50%, 1);
+  --clr-neutral-400: hsla(0, 0%, 40%, 1);
+  --clr-neutral-500: hsla(0, 0%, 60%, 1);
+  --clr-neutral-900: hsla(0, 0%, 10%, 1);
+
+  --clr-tip-dark: hsl(90, 50%, 20%);
+  --clr-tip-bg: hsl(90, 20%, 90%);
+  --clr-warn-dark: hsl(44, 76%, 38%);
+  --clr-warn-bg: hsl(44, 100%, 89%);
+  --clr-danger-dark: hsl(5, 87%, 27%);
+  --clr-danger-bg: hsl(5, 87%, 97%);
+}
+
+@media (min-width: 35em) {
+  :root {
+    --fs-sm: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.5rem;
+    --fs-xl: 2.25rem;
+    --fs-xxl: 3rem;
+  }
+}
+
+/* //////////////////////
+  RESET - source: https://piccalil.li/blog/a-modern-css-reset
+  /////////////////////// */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul:where([role='list']),
+ol:where([role='list']) {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* //////////////////////
+  General styling
+  /////////////////////// */
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-md);
+  color: var(--clr-neutral-900);
+  font-size: var(--fs-md);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-500);
+  color: var(--clr-primary-400);
+  line-height: 1.1;
+  padding-bottom: 1rem;
+}
+
+strong {
+  font-weight: var(--fw-500);
+}
+pre[data-language] {
+  margin-block: 2rem;
+}
+header {
+  padding: 1rem 2rem;
+  background-color: var(--clr-primary-200);
+}
+nav {
+  margin: 1rem 0rem;
+  min-width: 12ch;
+}
+.nav-list > li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  border-left: 0.5rem solid var(--clr-primary-200);
+}
+.nav-list ul {
+}
+.nav-list ::marker {
+  color: var(--clr-primary-400);
+}
+.nav-list ::details-content {
+  margin-left: 2rem;
+}
+main {
+  margin: 1rem 2rem;
+  padding-bottom: 1rem;
+  min-height: 100vh;
+  position: relative;
+  flex-grow: 1;
+}
+footer {
+  margin: 1rem 0rem 0;
+  /* background-color: var(--clr-neutral-200); */
+  padding-block: 0.5rem;
+  /* position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0; */
+}
+footer p {
+  font-size: var(--fs-sm);
+  text-align: center;
+  padding: 0 1rem;
+  margin: 0.5rem;
+}
+hr {
+  margin-block: 1.5rem;
+}
+
+/* //////////////////////
+  Utility Classes
+  /////////////////////// */
+.tip,
+.warn,
+.danger {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+/* TODO: add an icon for each */
+.ttl {
+  display: block;
+  font-weight: var(--fw-500);
+  font-size: var(--fs-lg);
+}
+.tip {
+  border-left: 0.5rem solid var(--clr-tip-dark);
+  color: var(--clr-tip-dark);
+  background-color: var(--clr-tip-bg);
+}
+.warn {
+  border-left: 0.5rem solid var(--clr-warn-dark);
+  color: var(--clr-warn-dark);
+  background-color: var(--clr-warn-bg);
+}
+.danger {
+  border-left: 0.5rem solid var(--clr-danger-dark);
+  color: var(--clr-danger-dark);
+  background-color: var(--clr-danger-bg);
+}
+iframe {
+  margin-block: 2rem;
+}
+.video-title {
+  color: var(--clr-neutral-400);
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--clr-neutral-400);
+}
+.video-title + iframe {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-nav a {
+  font-size: var(--fs-lg);
+  color: var(--clr-primary-300);
+}
+
+/* select all direct childen of .flow
+   and add margin to the top for proper
+   spacing */
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: 1.5em;
+  max-width: 100ch;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.container--narrow {
+  max-width: 65rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* typgraphy */
+
+.nav-list a {
+  color: var(--clr-neutral-900);
+  text-decoration: none;
+}
+
+.nav-list a:focus,
+.nav-list a:hover {
+  color: var(--clr-primary-400);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 80vw;
+  max-height: max(18rem, 60vh);
+  object-fit: cover;
+}
+
+/* //////////////////////
+  Article snippets
+  /////////////////////// */
+
+.snippet {
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+    'image'
+    'title'
+    'meta'
+    'body'
+    'button';
+}
+
+.snippet__image {
+  grid-area: image;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  padding: 0.75em 1.75em;
+  border-radius: 0.25em;
+  align-self: start;
+  justify-self: start;
+}
+
+.btn:focus {
+  outline: 0.125em solid var(--clr-primary-400);
+  outline-offset: 0.25em;
+}
+
+.btn--primary {
+  background: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-700);
+  border: 2px solid var(--clr-primary-400);
+}
+.btn--primary:hover,
+.btn--primary:focus {
+  background: var(--clr-primary-500);
+  border-color: var(--clr-primary-500);
+}
+
+.btn--neutral {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-700);
+  border: 2px solid var(--clr-neutral-900);
+}
+
+.btn--neutral:hover,
+.btn--neutral:focus {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-900);
+}
