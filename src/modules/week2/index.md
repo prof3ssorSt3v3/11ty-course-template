@@ -5,7 +5,7 @@ date: Last Modified
 eleventyNavigation:
   key: Week 2
   parent: Modules
-  title: Week 2
+  title: Week 2 Custom
   order: 2
 ---
 

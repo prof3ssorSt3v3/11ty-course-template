@@ -5,7 +5,7 @@ date: Last Modified
 eleventyNavigation:
   key: Week 4
   parent: Modules
-  title: Week 4
+  title: Week 4 Names
   order: 4
 ---
 

@@ -171,7 +171,14 @@ nav {
   padding-left: 1rem;
   border-left: 0.5rem solid var(--clr-primary-200);
 }
-.nav-list ul {
+.nav-list a.is-active {
+  color: var(--clr-primary-400);
+  font-weight: var(--fw-500);
+  text-decoration: underline;
+  text-decoration-color: var(--clr-primary-300);
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+  text-underline-offset: 3px;
 }
 .nav-list ::marker {
   color: var(--clr-primary-400);
