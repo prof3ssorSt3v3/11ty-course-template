@@ -348,6 +348,22 @@ h4 a:hover,
   color: var(--clr-primary-400);
   text-decoration: underline;
 }
+h1 a:hover::after,
+h2 a:hover::after,
+h3 a:hover::after,
+h4 a:hover::after,
+h1:focus a::after,
+h2:focus a::after,
+h3:focus a::after,
+h4:focus a::after {
+  content: url('/img/link.svg');
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-inline-start: 0.5rem;
+  fill: var(--clr-primary-300);
+  stroke: var(--clr-primary-300);
+}
 
 img {
   max-width: 80vw;
