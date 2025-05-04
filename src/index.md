@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Course Overview
+title: Course Introduction
 date: Last Modified
 name: value
 eleventyNavigation:

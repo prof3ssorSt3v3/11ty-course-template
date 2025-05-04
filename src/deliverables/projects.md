@@ -11,13 +11,13 @@ eleventyNavigation:
 
 # {{ title }}
 
-## Project 1
+## Project 1 {.capped}
 
 Just some content about Project Two.
 
 ### Submission
 
-## Project 2
+## Project 2 {.capped}
 
 Content about Project Two
 

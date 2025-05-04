@@ -171,6 +171,12 @@ h3 {
   padding-bottom: 1rem;
 }
 
+.capped {
+  border-top: 1px solid var(--clr-neutral-300);
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
+
 strong {
   font-weight: var(--fw-500);
 }

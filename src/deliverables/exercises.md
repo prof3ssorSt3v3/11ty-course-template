@@ -11,13 +11,13 @@ eleventyNavigation:
 
 # {{ title }}
 
-## Exercise 1
+## Exercise 1 {.capped}
 
 Just some content about Project Two.
 
 ### Submission
 
-## Exercise 2
+## Exercise 2 {.capped}
 
 Content about Project Two
 
