@@ -2,6 +2,21 @@
 import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import eleventyPluginFeathericons from 'eleventy-plugin-feathericons';
+import markdownIt from 'markdown-it';
+import markdownItAnchor from 'markdown-it-anchor';
+import markdownItAttrs from 'markdown-it-attrs';
+
+let markdownItOptions = {
+  html: true, // Enable HTML tags in source
+  linkify: true, // Autoconvert URL-like text to links
+  typographer: true,
+};
+let markdownItAnchorOptions = {
+  level: 2,
+  // minimum level header — anchors will only be applied to h2 level headers and below but not h1
+  permalink: markdownItAnchor.permalink.headerLink(),
+  //wrap the text inside the header with an anchor tag
+};
 
 export default async function (eleventyConfig) {
   // Configure Eleventy
@@ -9,6 +24,16 @@ export default async function (eleventyConfig) {
   eleventyConfig.setOutputDirectory('dist');
   //Folder to read for content
   eleventyConfig.setInputDirectory('src');
+  //Add library for markdown-it anchors and attributes
+  eleventyConfig.setLibrary(
+    'md',
+    markdownIt(markdownItOptions)
+      .use(markdownItAnchor, markdownItAnchorOptions)
+      .use(markdownItAttrs)
+      .use(function () {
+        console.log('setting md');
+      })
+  );
   //PLUGINS
   //Navigation plugin
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -63,8 +88,8 @@ export default async function (eleventyConfig) {
   }); //{% youTube 'Video about Van Halen', 'LfwJdWHjkGY' %}
   eleventyConfig.addShortcode('bottomNav', function (page, navigation) {
     //
-    console.log('bottomNav', navigation);
-    console.log('bottomNav', page);
+    // console.log('bottomNav', navigation);
+    // console.log('bottomNav', page);
     if (navigation.parent == 'Modules') {
       let key = navigation.key;
       let slug = page.fileSlug;
@@ -102,12 +127,15 @@ export default async function (eleventyConfig) {
   eleventyConfig.setIncludesDirectory('_includes');
   //for global data files
   eleventyConfig.setDataDirectory('_data');
+
   // Copy `src/img/` to `dist/img`
   eleventyConfig.addPassthroughCopy('src/img');
   // Copy `assets/*` to `dist/assets/*`
   eleventyConfig.addPassthroughCopy('src/assets');
   //copy CSS into dist folder
   eleventyConfig.addPassthroughCopy('bundle.css');
+  // copy 404 to dist folder
+  eleventyConfig.addPassthroughCopy('404.html');
   //
   eleventyConfig.setTemplateFormats(['njk', 'md', 'html']); //
 

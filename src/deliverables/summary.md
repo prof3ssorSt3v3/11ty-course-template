@@ -10,7 +10,7 @@ eleventyNavigation:
 
 # {{ title }}
 
-## Late Policy
+## Late Policy {#late_policy}
 
 For the exact due dates and times for any deliverable, see the assignment page in BS LMS.
 
@@ -27,7 +27,7 @@ Late penalty percentages are calculated based on the total possible value of the
 
 </div>
 
-## Extensions
+## Extensions {#extensions}
 
 Any request for an extension on an assignment must be made at least the day before the assignment is due.
 
@@ -35,7 +35,7 @@ Requests for extensions can be made via email to your instructor and must includ
 
 If you have no valid reason for an extension, consider the mental health extension option.
 
-## Mental Health Extensions for Assignments
+## Mental Health Extensions for Assignments {#mental_health}
 
 Once per semester you can request a 3-day extension on a single assignment. This extension does not change the due date for the assignment, nor does it change the date of the 10 day limit for assignment
 late submissions. This extension just provides immunity from the late penalty for 3 days. After the 3rd day, the full late penalty applies.

@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Welcome to
+title: Course Overview
 date: Last Modified
 name: value
 eleventyNavigation:
@@ -8,9 +8,9 @@ eleventyNavigation:
   order: 1
 ---
 
-# {{title}} {{pkg.name}}
+# Welcome to {{pkg.name}}
 
-## Sub Heading
+## {{title}}
 
 Just some sample content. {{name}}
 

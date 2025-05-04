@@ -10,14 +10,14 @@ eleventyNavigation:
 
 # {{ title }}
 
-## Recommended Books
+## Recommended Books {#recommended}
 
 Books are websites made of paper.
 
-## Video Tutorials
+## Video Tutorials {#video-tutorials}
 
 List of video tutorials related to the course.
 
-## Website Tutorials
+## Website Tutorials {#website-tutorials}
 
 List of online written tutorials and articles to support research and assignments.

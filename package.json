@@ -24,6 +24,9 @@
     "eleventy-plugin-icons": "^4.5.3",
     "eleventy-plugin-tailwindcss": "^0.3.0",
     "luxon": "^3.6.1",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-attrs": "^4.3.1",
     "simple-icons": "^14.12.3"
   }
 }
