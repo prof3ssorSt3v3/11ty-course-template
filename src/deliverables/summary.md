@@ -49,16 +49,18 @@ No extensions can be given to the final project.
 
 These extensions apply to all other assignments, unless otherwise indicated by the instructor.
 
-## Calendar of Due Dates
+## Deliverable Category Weighting
 
-The due dates for the assignments can be found in BS LMS.
-
-**Deliverable Category Weighting**
+Category weights for grading of assignments
 
 - **Quizzes** - 10% - 1 quiz
 - **Exercises** - 20% - 2 exercises
 - **Assignments** - 30% - 3 assignments
 - **Projects** - 40% - 2 projects
+
+## Calendar of Due Dates
+
+The due dates for the assignments can be found in BS LMS.
 
 | Category   | Task                                      | Due Date |
 | :--------- | :---------------------------------------- | :------- |
