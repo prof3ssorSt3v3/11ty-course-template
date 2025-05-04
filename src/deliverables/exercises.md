@@ -11,6 +11,14 @@ eleventyNavigation:
 
 # {{ title }}
 
-## Sub Heading
+## Exercise 1
 
-Just some content about the exercises.
+Just some content about Project Two.
+
+### Submission
+
+## Exercise 2
+
+Content about Project Two
+
+### Submission

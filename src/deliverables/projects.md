@@ -11,6 +11,14 @@ eleventyNavigation:
 
 # {{ title }}
 
-## Sub Heading
+## Project 1
 
-Just some content about the projects.
+Just some content about Project Two.
+
+### Submission
+
+## Project 2
+
+Content about Project Two
+
+### Submission
