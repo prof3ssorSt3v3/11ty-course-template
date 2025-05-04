@@ -4,7 +4,7 @@ title: Assignments and Projects
 date: Last Modified
 eleventyNavigation:
   key: Deliverables
-  order: 4
+  order: 5
 ---
 
 # {{ title }}

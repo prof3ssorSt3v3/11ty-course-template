@@ -4,7 +4,7 @@ title: Course Modules
 date: Last Modified
 eleventyNavigation:
   key: Modules
-  order: 3
+  order: 4
 ---
 
 # {{ title }}
