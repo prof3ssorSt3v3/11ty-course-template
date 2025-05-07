@@ -221,16 +221,19 @@ main {
 footer {
   margin: 1rem 0rem 0;
   background-color: var(--clr-neutral-100);
-  padding-block: 1rem;
+  gap: 1rem;
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
 }
 footer .logo {
-  width: 80%;
+  max-width: 40%;
+  align-self: flex-start;
 }
-.logo img {
+.logo img,
+.logo picture {
   max-width: 90%;
+  object-fit: scale-down;
 }
 footer p {
   font-size: var(--fs-sm);
