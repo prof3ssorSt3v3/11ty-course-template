@@ -1,5 +1,6 @@
 // import { DateTime } from 'luxon';
 import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import eleventyPluginFeathericons from 'eleventy-plugin-feathericons';
 import markdownIt from 'markdown-it';
@@ -37,6 +38,8 @@ export default async function (eleventyConfig) {
   //PLUGINS
   //Navigation plugin
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  //Image optimization plugin
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
   //syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight, {
     // Line separator for line breaks

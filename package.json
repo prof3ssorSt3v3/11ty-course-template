@@ -19,6 +19,7 @@
     "eleventy-plugin-feathericons": "^1.1.0"
   },
   "dependencies": {
+    "@11ty/eleventy-img": "^6.0.2",
     "@11ty/eleventy-navigation": "^1.0.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "eleventy-plugin-icons": "^4.5.3",
