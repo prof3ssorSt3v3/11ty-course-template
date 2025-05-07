@@ -31,6 +31,10 @@ Late penalty percentages are calculated based on the total possible value of the
 
 **The basic idea behind plagiarism is that submitting work that you did not create yourself is dishonest.**
 
+You are here to learn how to design and develop, and to prove that you have learned these skills. Submitting someone else's work as your own proves nothing but willingness to cheat. It disrespects your instructor as well as your fellow classmates who are making the real effort.
+
+If you need help, your instructor, your program assistants, and your fellow classmates are all here to help you. You only have to ask.
+
 If you take work that was created by any of the following:
 
 - a former student from the program
