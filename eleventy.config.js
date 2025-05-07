@@ -22,7 +22,8 @@ let markdownItAnchorOptions = {
 export default async function (eleventyConfig) {
   // Configure Eleventy
   // Order matters, put this at the top of your configuration file.
-  eleventyConfig.setOutputDirectory('dist');
+  // eleventyConfig.setOutputDirectory('dist');
+  eleventyConfig.setOutputDirectory('_site');
   //Folder to read for content
   eleventyConfig.setInputDirectory('src');
   //Add library for markdown-it anchors and attributes
