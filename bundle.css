@@ -184,8 +184,16 @@ main h2 {
 strong {
   font-weight: var(--fw-500);
 }
-pre[data-language] {
+pre,
+pre[data-language],
+code,
+code[class*='language-'],
+pre[class*='language-'] {
   margin-block: 2rem;
+  /* max-width: 100%; */
+  /* overflow-x: auto; */
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 header {
   padding: 1rem 2rem;
