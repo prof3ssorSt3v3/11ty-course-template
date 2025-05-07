@@ -27,6 +27,31 @@ Late penalty percentages are calculated based on the total possible value of the
 
 </div>
 
+## Plagiarism
+
+**The basic idea behind plagiarism is that submitting work that you did not create yourself is dishonest.**
+
+If you take work that was created by any of the following:
+
+- a former student from the program
+- a friend from work
+- an online source that you found
+- someone you paid to create an assignment solution
+- a classmate
+- an AI chatbot
+- an AI tool
+- a previous submission of your own work from a previous semester
+
+Then the assignment will be labelled as plagiarism.
+
+If labelled as such, penalties for this, depending on the severity and number of offences, include:
+
+- zero grade on the assignment
+- having to take the college plagiarism seminar
+- zero grade on the course
+- being kicked out of the program
+- being kicked out of the college.
+
 ## Extensions {#extensions}
 
 Any request for an extension on an assignment must be made at least the day before the assignment is due.
