@@ -171,6 +171,10 @@ h3 {
   padding-bottom: 1rem;
 }
 
+main h2 {
+  border-top: 1px solid var(--clr-primary-300);
+  padding-top: 1rem;
+}
 .capped {
   border-top: 1px solid var(--clr-neutral-300);
   padding-top: 2rem;

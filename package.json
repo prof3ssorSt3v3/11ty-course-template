@@ -1,10 +1,11 @@
 {
   "name": "Mobile App Course Name",
   "code": "MAD9000",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm version patch --no-git-tag-version",
+    "deploy": "git add -A && echo 'added' && git commit -m '🙏🔥 updated' && echo 'committed' && git push origin main",
     "build": "MODE=production npx @11ty/eleventy",
     "serve": "MODE=development npx @11ty/eleventy --serve"
   },
