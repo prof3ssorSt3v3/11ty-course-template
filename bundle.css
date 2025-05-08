@@ -223,6 +223,10 @@ nav {
 .nav-list ::details-content {
   margin-left: 2rem;
 }
+summary:has(+ ul a.is-active) {
+  color: var(--clr-primary-400);
+  font-weight: var(--fw-500);
+}
 main {
   margin: 1rem 2rem;
   padding-bottom: 1rem;
