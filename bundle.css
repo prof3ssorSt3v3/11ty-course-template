@@ -381,9 +381,8 @@ h4:focus a::after {
 img {
   max-width: 80vw;
   max-height: max(18rem, 60vh);
-  object-fit: cover;
+  object-fit: contain;
 }
-
 main img {
   width: 100%;
 }
